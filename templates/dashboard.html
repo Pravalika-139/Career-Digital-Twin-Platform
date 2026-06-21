@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Career Dashboard</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<a href="/">Home</a>
+<a href="/profile">Profile</a>
+<a href="/recommendation">Career Recommendation</a>
+<a href="/resume">Resume Analyzer</a>
+<a href="/results">Results</a>
+<a href="/dashboard">Dashboard</a>
+
+</nav>
+
+
+<h1>Career Dashboard</h1>
+
+
+<div class="card">
+
+
+{% if result %}
+
+
+<h2>Student Name</h2>
+
+<p>{{ result[0] }}</p>
+
+
+<h2>Skills Detected</h2>
+
+<p>{{ result[1] }}</p>
+
+
+<h2>Placement Readiness</h2>
+
+<h1>{{ result[2] }}%</h1>
+
+<progress value="{{ result[2] }}" max="100"></progress>
+
+
+
+<h2>Career Recommendations</h2>
+
+
+{% for career in careers %}
+
+<p>Recommended: {{ career }}</p>
+
+{% endfor %}
+
+
+
+{% else %}
+
+
+<h2>Resume Status</h2>
+
+<p>
+Resume not uploaded yet.
+</p>
+
+
+<p>
+Please upload your resume to get:
+</p>
+
+
+<ul>
+<li>Skill Detection</li>
+<li>Placement Score</li>
+<li>Career Recommendations</li>
+</ul>
+
+
+{% endif %}
+
+
+</div>
+
+
+</body>
+
+</html>

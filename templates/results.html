@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Previous Results</title>
+</head>
+<body>
+
+<h1>Previous Resume Results</h1>
+
+<a href="/">Home</a> |
+<a href="/profile">Profile</a> |
+<a href="/recommendation">Career Recommendation</a> |
+<a href="/resume">Resume Analyzer</a>
+
+<hr>
+
+{% for result in results %}
+
+<h3>{{ result[0] }}</h3>
+
+<p><b>Skills:</b> {{ result[1] }}</p>
+
+<p><b>Score:</b> {{ result[2] }}%</p>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>
