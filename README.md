@@ -102,21 +102,21 @@ Career-Digital-Twin-Platform/
 
 
 
-
-
-
-
-
-
 ## 📸 Screenshots
 
-Application screenshots are available below.
-
+### Home Page
 ![Home Page](screenshots/home.png)
 
+### Profile Page
 ![Profile Page](screenshots/profile.png)
 
+### Career Recommendation Page
 ![Career Recommendation Page](screenshots/recommendation.png)
+
+
+
+
+
 
 
 
