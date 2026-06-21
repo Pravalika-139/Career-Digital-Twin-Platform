@@ -104,14 +104,7 @@ Career-Digital-Twin-Platform/
 
 ## 📸 Screenshots
 
-### Home Page
-![Home Page](screenshots/home.png)
-
-### Profile Page
-![Profile Page](screenshots/profile.png)
-
-### Career Recommendation Page
-![Career Recommendation Page](screenshots/recommendation.png)
+Application screenshots are available in the `screenshots` folder.
 
 
 
